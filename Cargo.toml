@@ -1,0 +1,20 @@
+[package]
+name = "image-synthesis"
+version = "0.1.0"
+edition = "2021"
+authors = ["GaoChen <zhupenghuyou@gmail.com>"]
+description = "rust image synthesis sdk basic mirror library"
+license = "MIT"
+
+[dependencies]
+image = "0.25.1"
+imageproc = "0.25.0"
+reqwest = { version = "0.12.3", features = ["json","blocking"] }
+ab_glyph = "0.2.26"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+async-trait = "0.1.80"
+thiserror = "1.0.61"
+
+[dev-dependencies]
+tokio = { version = "1.37.0", features = ["rt-multi-thread", "rt", "macros"] }
